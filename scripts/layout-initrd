@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 function cache_services() {
     local SERVICE_YMLFILE=$1
 

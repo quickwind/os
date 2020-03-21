@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 # Override using a local kernel build
 if [ -e ${DAPPER_SOURCE}/assets/kernel.tar.gz ]; then
