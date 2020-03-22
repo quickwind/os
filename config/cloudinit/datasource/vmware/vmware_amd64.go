@@ -33,6 +33,7 @@ type ovfWrapper struct {
 
 func (ovf ovfWrapper) readConfig(key string) (string, error) {
 	if val := ovf.env.Properties["guestinfo."+key]; val != "" {
+		log.Printf("Read from OVF environment %q: %q\n", key, val)
 		return val, nil
 	}
 	return readConfig(key)
